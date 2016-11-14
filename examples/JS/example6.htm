@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Example 6</title>
+
+<script src='../WDC.js'></script>
+
+</head><body>
+
+<div id='output'></div>
+
+<script>
+
+OnDOMReady(function()
+{
+   for (j = 1 ; j < 145 ; ++j)
+      O('output').innerHTML += FromKeyCode(j) + ", "
+})
+
+</script>

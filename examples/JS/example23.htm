@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Example 23</title>
+
+<script src='../WDC.js'></script>
+
+</head><body>
+
+<div id='moveme'>Move Me</div>
+
+<script>
+
+OnDOMReady(function()
+{
+   S('moveme').background = 'green'
+   S('moveme').color      = 'cyan'
+   Position('moveme', ABS)
+   GoTo('moveme', 200, 25)
+})
+
+</script>
+
+

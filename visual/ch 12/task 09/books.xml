@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<library>
+	<book title="The Gay Science" authorid="1001" />
+	<book title="Thus Spoke Zarathustra" authorid="1001" />
+	<book title="Capital" authorid="1002" />
+	<book title="Moses and Monotheism" authorid="1003" />
+</library>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Example 8</title>
+
+<script src='../WDC.js'></script>
+
+</head><body>
+
+<img id='gif' src='i1.gif' />
+The image cannot be dragged.
+<span id='text'>And this text is unselectable.</span>
+
+<script>
+
+OnDOMReady(function()
+{
+   PreventAction('gif',  'drag',   true)
+   PreventAction('text', 'select', true)
+})
+
+</script>
+
+

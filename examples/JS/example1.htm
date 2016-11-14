@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Example 1</title>
+
+<script src='../WDC.js'></script>
+
+</head><body>
+
+Fred: <span id='Fred'></span><br />
+Mary: <span id='Mary'></span><br />
+Bill: <span id='Bill'></span>
+
+<script>
+
+OnDOMReady(function()
+{
+   ids = Array('Fred', 'Mary', 'Bill')
+   O(ids, 'innerHTML', 'New contents...')
+})
+
+</script>
+

@@ -1,0 +1,21 @@
+<html><head><title>AJAX GET Example</title>
+<script src='../WDC.js'></script>
+</head><body><center />
+
+<h1>Loading a page in-between <font face='Courier New'>&lt;div&gt;&hellip;&lt;/div&gt;</font> tags</h1>
+
+<div id='info'>The contents of this DIV will be replaced</div>
+
+<script>
+
+OnDOMReady(function()
+{
+   GetAjaxRequest(todiv, 'ajaxget.php', 'url=http://m.facebook.com/')
+
+   function todiv()
+   {
+      Html('info', this)
+   }
+})
+
+</script>
