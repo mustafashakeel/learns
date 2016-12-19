@@ -41,21 +41,26 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <nav id="mainNav" style="background-color: rgba(142, 142, 142, 0.79); height:6em;" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/coshelf-logo-white.png" id="coshelflogo" alt=Coshelf"">    </a>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top"><img src="img/coshelf-logo-white.png" id="coshelflogo" alt=Coshelf"">    </a> -->
             </div>
 
+                
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right top-nav">
+            <div class="collapse navbar-collapse"> 
+            <ul class="nav navbar-nav navbar-right top-nav">
+            </ul>
+            </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left top-nav">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="#page-top" ></a>
                     </li>
            <!--          <li>
                         <a class="page-scroll" href="#services">Services</a>
@@ -69,6 +74,10 @@
                     <li>
                         <a class="page-scroll" href="#" data-toggle="modal" data-target="#referus">Refer Maker / Retailer</a>
                     </li> 
+
+                    <li>
+                        <a href="#page-top" id="logoimage" style="background-color: transparent;"><img src="img/coshelf-logo-white.png" id="coshelflogo" alt=Coshelf""></a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li> 
@@ -77,6 +86,7 @@
                     </li>
                 </ul>
             </div>
+           
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
@@ -103,8 +113,8 @@
                                 <br>
                                 <span>Type </span>
                                 <div class="radio">
-                                  <label><input type="radio" name="refermaker" >Maker </label>
-                                  <label><input type="radio" name="referretailer">Retailer </label>
+                                  <label><input type="radio" name="refermaker" id="refermaker" >Maker </label>
+                                  <label><input type="radio" name="referretailer" id="referretailer" >Retailer </label>
                                 </div>
 
                             <span>Address</span>
@@ -122,7 +132,7 @@
 
                             </div>
                         <div class="modal-footer"> 
-                            <button class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button class="btn btn-default" id="closerefer" data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
@@ -134,9 +144,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome to CoShelf</div>
-                <h1 class="usp"><span class="rotate">Building a stronger Community / local economy, help makers access retail spaces at ideal locations, help retailers find exciting / unique merchandises</span></h1>
-                <div class="intro-lead-in"> Subscribe to be a Beta tester</div>
+                <div class="intro-lead-in"></div>
+                <h1 class="usp"><span style="font-weight:10px !important;"class="rotate">Building a stronger Community / local economy, help makers access retail spaces at ideal locations, help retailers find exciting / unique merchandises</span></h1>
+                <div class="intro-lead-in"> </div>
                 
 
                 <!-- Begin MailChimp Signup Form -->
@@ -148,15 +158,14 @@
                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
             </style>
             <div id="mc_embed_signup">
-            <form action="//coshelf.us14.list-manage.com/subscribe/post?u=98fa09488fe07df04c1034fd0&amp;id=e45addeb1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                 <!-- <label for="mce-EMAIL">Subscribe to our mailing list</label> -->
-                <input type="email" value="" size="35" style="color:black !important; padding: 25px !important; border-radius: 5px !important;" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_98fa09488fe07df04c1034fd0_e45addeb1e" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" style="padding:25px !important; line-height:5px" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div class="clear">
+<input type="button" class="button" value="Sign up for a shelf space" id="mc-embedded-subscribe" style="padding:25px !important; line-height:5px" />
                 </div>
-            </form>
+                </div>
+            
             </div>
 
             <!--End mc_embed_signup-->
@@ -392,7 +401,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                   <!--  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
             <div class="row">
@@ -542,10 +551,19 @@
 
     <footer>
         <div class="container">
+        <div clas="row">
+            <div class="col-md-6">
+                <img src="img/spring.png" style="float:left;" alt="Spring University">
+            </div>
+             <div class="col-md-6">
+                <img src="img/startupcanada.png" alt="Spring University">
+            </div>
+        </div>
             <div class="row">
                 <div class="col-md-4">
                     <span class="copyright">Copyright &copy; coshelf 2016</span>
                 </div>
+
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li><a href="https://twitter.com/CoShelf

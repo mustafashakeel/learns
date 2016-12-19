@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<script src="jquery/jquery.min.js"></script>
+	<style>
+		.lines{
+			background:yellow;
+			color:red;
+			padding:10px;
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+
+
+
+<div id="photos">
+test
+
+</div>
+	<script>
+		var root = 'https://jsonplaceholder.typicode.com';
+		var photos = {},
+		images="";
+
+$.ajax({
+  // url: root + '/albums',
+  url: root + '/photos',
+  method: 'GET'
+}).then(function(data) {
+	// console.log(data);
+//	console.log(data.length);
+
+
+	for ( var i = 0 ; i < 10; i++ ){
+//		console.log(data[i]);
+		images += '<a href="'+data[i].url+'"><img src="'+data[i].thumbnailUrl+'"/></a>';
+
+ 	$('#photos').html(images)
+	}
+
+});
+
+$.ajax({
+   // url: root + '/albums',
+ // url: root + '/comments',
+ // url: root + '/todos',
+  url: root + '/users',
+
+
+  method: 'GET'
+}).then(function(data) {
+	console.log(data.length);
+	console.log(data);
+
+
+	// for ( var i = 0 ; i < 10; i++ ){
+	// 	console.log(data[i]);
+	// 	images += '<a href="'+data[i].url+'"><img src="'+data[i].thumbnailUrl+'"/></a>';
+
+ // 	$('#photos').html(images)
+	// }
+
+});
+	</script>
+</body>
+</html>

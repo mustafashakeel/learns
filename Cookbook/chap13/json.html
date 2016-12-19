@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+
+<script>
+	var moneyAPI1 = "https://openexchangerates.org/api/latest.json?app_id=7352e5f344774600ae67e08dccdaef58";
+var moneyAPI2 = "http://openexchangerates.org/api/currencies.json?app_id=7352e5f344774600ae67e08dccdaef58";
+  
+
+$.getJSON(moneyAPI1).done(function(data){
+	console.log(data.rates);
+	var rates = data.rates;
+	var key = Object.keys(rates);
+	var val = Object.values(rates);
+
+$.getJSON(moneyAPI2).done(function(data){
+
+	console.log(data);
+});
+// console.log(val);
+	// for(var i=0; i < key.length; i++){
+
+	// 	 console.log(" keys ", key[i], "Values",val[i]);
+
+	// }
+});
+
+// $.getJSON(moneyAPI1).done(function( data ) {
+//     $.getJSON(moneyAPI2).done(function(data2) {
+//         var rates = data.rates;
+//         var keys = Object.keys(rates);
+//         for (var i = 0; i < keys.length; i++) {
+//               var rate = rates[keys[i]];
+//               var name = data2[keys[i]];
+//               console.log(name + " " + rate);
+//         }
+//      });
+// });
+
+</script>
+
+</body>
+</html>

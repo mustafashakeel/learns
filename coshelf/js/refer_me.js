@@ -8,7 +8,7 @@ $(function() {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
-            alert("dfdsdf");
+         
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var businessname = $("input#businessname").val(),
@@ -64,7 +64,12 @@ $(function() {
                         .append('</div>');
 
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $('#referus').modal('hide');
+$('body').removeClass('modal-open');
+$('.modal-backdrop').remove();
+                    // $('#referus').trigger("reset");
+                  //  $('#referus').modal('close');
+                    // $('button#closerefer').click();
                 },
                 error: function() {
                     // Fail message
@@ -83,14 +88,14 @@ $(function() {
         },
     });
 
-    $("a[data-toggle=\"tab\"]").click(function(e) {
-        e.preventDefault();
-        $(this).tab("show");
-    });
+    // $("a[data-toggle=\"tab\"]").click(function(e) {
+    //     e.preventDefault();
+    //     $(this).tab("show");
+    // });
 });
 
 
 /*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
-    $('#success').html('');
-});
+// $('#name').focus(function() {
+//     $('#success').html('');
+// });

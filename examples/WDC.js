@@ -1,3 +1,4 @@
+
 // WDC.js Version 1.0
 
 Initialize()

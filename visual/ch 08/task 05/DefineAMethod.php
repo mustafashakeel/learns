@@ -11,6 +11,6 @@ class Person{
 
 $p = new Person();
 $p->setName('Michele');
-//$p->readDiary();
+$p->readDiary();
 
 ?>

@@ -8,29 +8,43 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
  #mc-embedded-subscribe{
-          background-color: #fec503 !important;
-          border-color: #f6bf01 !important;
-          border-radius:8px !important;
-          padding: 15px !important;
-          font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          text-transform: uppercase;
-          font-size: 18px !important;
+    border-color: #f9e18c !important;
+    border-width: 3px !important;
+    border-style: solid !important;
+    background-color: transparent !important;
+    border-radius: 8px !important;
+    color: #f9e18c!important;
+    padding: 15px !important;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px !important;
   }
+#mainNAv {
+        background-color: rgba(142, 142, 142, 0.79);
+}
 .text-muted {
   color: #777777;
 }
 .top-nav {
-    background: currentColor;
-    margin-top: -60px;
+    background: transparent;
+    /*margin-top: -60px;*/
     border-radius: 10px;
 }
 #coshelflogo {
-  width: 20%;
-  margin-top: -30px;
+/*    width: 15%;
+    margin-top: -30px;
+    margin-left: -50px;*/
+        position: relative;
+    left: 20em;
+   
+    width: 20%;
 
 }
 .text-primary {
   color: #fed136;
+}
+.usp{
+  font-weight: 10px !important;
 }
 p {
   font-size: 14px;
@@ -53,7 +67,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #f9e18c;
 }
 h1,
 h2,
@@ -80,7 +94,7 @@ h6 {
   border-color: #fed136;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 10;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -183,8 +197,8 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #f9e18c;
+  border-color: #f9e18c;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -192,7 +206,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: #f9e18c;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -209,12 +223,27 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fed136;
+  background-color: #f9e18c;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: #f9e18c;
+}
+@media only screen and (max-width: 500px) {
+    #logoimage {
+   position: fixed;
+  }
+  #coshelflogo {
+    position: fixed;
+    top: .25em;
+    left: 0em;
+}
+  .navbar-custom .nav li a {
+
+    background-color: rgba(166, 165, 161, 0.66) !important;
+  } 
+  
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -225,6 +254,7 @@ fieldset[disabled] .btn-xl.active {
     transition: padding 0.3s;
     border: none;
   }
+  
   .navbar-custom .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
@@ -240,12 +270,13 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222222;
     padding: 10px 0;
   }*/
+
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
 }
 header {
-  background-image: url('../img/hero.png');
+  background-image: url('../img/background.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
